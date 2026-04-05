@@ -1,0 +1,15 @@
+[project]
+name = "lyrics-transcribe"
+version = "0.1.0"
+description = "Extract vocals from audio and transcribe lyrics"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "demucs>=4.0.1",
+    "openai-whisper>=20250625",
+    "torch>=2.11.0",
+    "torchaudio>=2.11.0",
+]
+
+[project.scripts]
+dlt = "lyrics_transcribe.cli:main"
